@@ -13,7 +13,7 @@ function AddTodo({ addTodo }) {
             />
             <button
                 onClick={() => {
-                    addTodo(inputText);
+                    addTodo({ todoText: inputText });
                     setInputText("");
                 }}
             >
